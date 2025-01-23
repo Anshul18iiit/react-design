@@ -1,42 +1,158 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-cta {
+  background-color: white;
+  color: #007BFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #E3F2FD;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #007BFF;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #FFC107;
+  margin: 10px 0;
+}
+
+.hero-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background-color: #F8F9FA;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.about h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #ffffff;
 }
 
-.card {
-  padding: 2em;
+.services h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #E3F2FD;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card li {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
